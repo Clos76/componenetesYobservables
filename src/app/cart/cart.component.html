@@ -1,0 +1,10 @@
+<!-- -->
+<h2>Articulos en carrito</h2>
+
+<div class="product-list">
+    <div  *ngFor = "let item of cartItems" class="product-card"> <!--crear item para reperit ngFor -->
+        <h3 class="product-title">{{item.title}} - Quantity: {{item.quantity}} </h3> <!-- articulo y cantidad-->
+        <p class="product-price">Price: ${{item.price}} (Total: ${{item.price * item.quantity}}) </p><!-- precio y total de articulos-->
+        <img class="product.image" [src]="item.image" alt="{{item.title}} " width="100">
+        
+    </div>

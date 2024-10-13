@@ -1,0 +1,81 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a3b18a;
+}
+
+h1{
+    text-align: center;
+    color: #3a5a40;
+    margin: 20px 0;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: #ccd5ae;
+    padding: 10px 0; 
+    border-radius: 5px;
+}
+
+/* Navegacion p */
+nav p{
+    margin: 0 15px;
+}
+
+/* navegacion link */
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+router-outlet {
+    margin-top: 20px;
+}
+
+/* Seccion de intro */
+.intro {
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    padding: 20px; 
+    margin: 20px 0; 
+    text-align: center; 
+}
+
+.intro h2 {
+    color: #4CAF50; 
+    margin-bottom: 10px; /* espacio debajo de intro */
+}
+
+.intro p {
+    color: #555; 
+    line-height: 1.6;
+}
+
+/* Estilo de botones */
+.btn {
+    display: inline-block;
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel {
+    margin: 20px 0;
+}

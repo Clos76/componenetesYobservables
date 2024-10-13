@@ -1,0 +1,20 @@
+
+<h2>Lista de productos</h2>
+<!--  -->
+<div class="cart-info">
+    <a routerLink="/cart"> Cart({{itemCount}}) </a> <!-- link para carrito -->
+</div>
+
+<!-- lista de productos -->
+<div class="product-list">
+    <div  *ngFor = "let product of products" class="product-card">
+        <h3 class="product-title">{{product.title}} </h3><!--titulo de producto -->
+        <p class="product-price">Price: ${{product.price}} </p><!--precio de articulos-->
+        <img class="product.image" [src]="product.image" alt="{{product.tite}} " width="100"> 
+        <button class="add-cart-button" (click)="addToCart(product)">Añadir al carrito</button>
+    </div>
+</div>
+
+
+
+

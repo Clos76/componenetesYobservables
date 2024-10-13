@@ -1,0 +1,77 @@
+/* Estilo general para contenedor de articulos*/
+
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* estilo para las prod individuales */
+.product-card {
+border: 1px solid #ddd; 
+border-radius: 8px;
+padding: 16px;
+margin: 10px;
+width: 200px;
+text-align: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-image{
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card:hover{
+    transform: scale(1.05);
+}
+
+.product-title{
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-price{
+    font-size: 1em;
+    color: #333;
+}
+
+h2{
+    text-align: center;
+    color: #d4a373;
+    margin: 20px 0;
+}
+
+
+/* botton para agregar al carrito */
+.add-cart-button{
+
+    background-color: #ccd5ae;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, trasnform 0.3s;
+}
+
+.add-cart-button:hover{
+    background-color: #588157;
+    transform: translateY(-2px);
+}
+
+.cart-info{
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.cart-info a {
+    text-decoration: none;
+    color: #4caf50;
+}
+.cart-info a:hover{
+    color: #45a049;
+}
